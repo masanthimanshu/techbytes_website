@@ -1,0 +1,49 @@
+.hero_img {
+  animation: flying 1s infinite alternate;
+}
+
+.slide_left {
+  transform: translateX(-200%);
+}
+
+.slide_right {
+  transform: translateX(200%);
+}
+
+.hover_div {
+  padding: 1rem;
+  border-radius: 5px;
+  border: 2px solid green;
+  transition-duration: 0.5s;
+}
+
+.hover_div:hover {
+  color: white;
+  background-color: green;
+}
+
+.hover_div img:hover {
+  scale: 1.1;
+  border-radius: 0;
+}
+
+.zoom_sec {
+  width: 25vw;
+  height: 25vh;
+  margin: auto;
+  cursor: pointer;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://images.unsplash.com/photo-1575936123452-b67c3203c357);
+}
+
+@keyframes flying {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(25px);
+  }
+}
